@@ -1,0 +1,12 @@
+#! /usr/bin/env python3
+
+from robot_controller.robot_controller_node import RobotControllerNode
+import rospy
+
+def main():
+    node = RobotControllerNode()
+    answer = node.set_goal(1, 0, 0)
+    rospy.logerr(answer)
+
+if __name__ == '__main__':
+    main()

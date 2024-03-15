@@ -1,0 +1,8 @@
+footprint: [[-0.205, -0.155], [-0.205, 0.155], [0.077, 0.155], [0.077, -0.155]]
+
+inflation_radius: 1.0
+cost_scaling_factor: 3.0
+track_unknown_space: true
+update_frequency: 4.0
+publish_frequency: 3.0
+transform_tolerance: 0.5
