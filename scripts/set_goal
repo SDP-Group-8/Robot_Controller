@@ -5,7 +5,14 @@ import rospy
 
 def main():
     node = RobotControllerNode()
-    answer = node.set_goal(1, 0, 0)
+
+    rospy.logerr(rospy.get_param_names())
+
+    goal_x = rospy.get_param("/goal_x")
+    goal_y = rospy.get_param("/goal_y")
+    goal_yaw = rospy.get_param("/goal_yaw")
+
+    answer = node.set_goal(goal_x, goal_y, goal_yaw)
     rospy.logerr(answer)
 
 if __name__ == '__main__':
